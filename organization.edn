@@ -1,0 +1,10 @@
+;; Real-world organization identity/contact.
+;; :head-role is institutional title only -- no personal names.
+{:name-en "CBI (Confederation of British Industry)"
+ :abbreviation "CBI"
+ :official-url "https://www.cbi.org.uk/"
+ :isic "9411"
+ :country "GBR"
+ :established-date "1965"
+ :head-role-note "institutional office title only (President/Director-General); personal names of current/former office-holders incidentally encountered but never persisted here"
+ :sourced-from "verified directly (WebFetch) 2026-07-18 -- en.wikipedia.org's own article confirms CBI 'was formed in 1965 out of a merger of the Federation of British Industries (FBI), the British Employers' Confederation and the National Association of British Manufacturers' -- year-only precision, no day/month given. Independently corroborated (year only) by encyclopedia.com. A day-level claim surfaced only in aggregated web-search summaries, which themselves DISAGREE with each other ('3 July 1965' per one summary of CBI's own FAQ vs '30 July 1965' per another summary) -- neither could be independently confirmed by directly reading a source this tick (cbi.org.uk's FAQ PDF and several reference sites all returned HTTP 403), so no day-level date is used here; this genuine, unresolved discrepancy is documented transparently rather than picking one arbitrarily. en.wikipedia.org's article additionally confirms a distinct, month-precise milestone: the CBI's headquarters relocated from Centre Point to Cannon Place in March 2014."}

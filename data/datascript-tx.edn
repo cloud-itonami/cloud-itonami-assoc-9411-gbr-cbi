@@ -1,0 +1,25 @@
+;; data/datascript-tx.edn — DataScript tx-data derived from src/association/facts.cljc
+;; `association.facts/catalog` (ADR-2607141700 Wave 0). Same shape as sibling files.
+
+[#:association-rule{:id "cbi.founding-1965"
+                     :title "CBI (Confederation of British Industry) formed in 1965 from a merger of the Federation of British Industries, the British Employers' Confederation, and the National Association of British Manufacturers (en.wikipedia.org's own article gives year-only precision; a day-level claim is genuinely disputed across sources and NOT used here -- see docstring)"
+                     :association "cbi"
+                     :isic "9411"
+                     :country "GBR"
+                     :kind :governance-program
+                     :url "https://en.wikipedia.org/wiki/Confederation_of_British_Industry"
+                     :url-provenance :wikipedia-corroborated
+                     :established-date "1965"
+                     :retrieved-at "2026-07-18"
+                     :topic [:governance]}
+ #:association-rule{:id "cbi.hq-relocation-2014-03"
+                     :title "CBI's headquarters relocated from Centre Point to Cannon Place in March 2014"
+                     :association "cbi"
+                     :isic "9411"
+                     :country "GBR"
+                     :kind :governance-program
+                     :url "https://en.wikipedia.org/wiki/Confederation_of_British_Industry"
+                     :url-provenance :wikipedia-corroborated
+                     :established-date "2014-03"
+                     :retrieved-at "2026-07-18"
+                     :topic [:governance]}]
