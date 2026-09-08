@@ -40,7 +40,7 @@
 
 (ns verify-catalog
   (:require [clojure.edn :as edn]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             ["fs" :as fs]
             ["os" :as os]
             ["path" :as path]
@@ -123,12 +123,12 @@
    A month-precise date must name BOTH the month and the year: `March` alone
    appears in half these pages."
   [q d prec]
-  (let [q (str/lower-case q)
+  (let [q (str/lower q)
         [y m dd] (str/split (str d) #"-")
         month (when m (get en-months (dec (js/parseInt m 10))))
         day-forms (when dd (let [n (js/parseInt dd 10)]
                              (distinct [dd (str n) (ordinal n)])))]
-    (or (str/includes? q (str/lower-case (str d)))
+    (or (str/includes? q (str/lower (str d)))
         (case prec
           :day (boolean (some (fn [df]
                                 (some #(str/includes? q %)
