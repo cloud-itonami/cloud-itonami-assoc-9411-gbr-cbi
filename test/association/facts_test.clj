@@ -4,7 +4,7 @@
   The counts below are deliberately exact rather than `pos?`: this catalog's
   failure mode is not a wrong answer, it is a quiet shrink -- an entry dropped
   in an edit reads the same as an entry that was never there."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [association.facts :as facts]))
 

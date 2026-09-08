@@ -20,7 +20,7 @@
   this family of catalogs to contain a double quote, and the generator escapes
   it into the Kotoba literal. If that escape did not round-trip, the comparison
   below is what says so."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [association.facts :as facts]
             [kotoba.compiler.core :as compiler]
