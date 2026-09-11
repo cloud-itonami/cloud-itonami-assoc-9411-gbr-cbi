@@ -24,8 +24,8 @@ Each of the 12 entries records the **verbatim span** its claim rests on
 the fact (`:association-rule/date-precision`).
 
 ```bash
-nbb scripts/verify-catalog.cljs          # structural, offline
-nbb scripts/verify-catalog.cljs --live   # fetch every source, require every span
+kbb --backend sci scripts/verify-catalog.cljk          # structural, offline
+kbb --backend sci scripts/verify-catalog.cljk --live   # fetch every source, require every span
 ```
 
 Reachability is not support: a URL that returns 200 and no longer
